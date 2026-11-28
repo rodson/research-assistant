@@ -5,4 +5,5 @@ agent = define_deep_agent(
     name="research-assistant",
     model="deepseek:deepseek-flash",
     tools=[get_product_metrics],
+    interrupt_on={"send_email": True},
 )
